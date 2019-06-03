@@ -12,7 +12,16 @@
  */
 int parser_eEmpleadoFromText(FILE* pFile , LinkedList* pArrayListeEmpleado)
 {
+    do{
+       int c;
+       int id, horas, sueldo;
+       char nombre[80];
+       c = fscanf(pFile,"%d,%[^,],%d,%d\n",&id,nombre,&horas,&edad);
+            if(c == 4)
+            {   //asigno
 
+            }
+    while(!feof(pFile));
     return 1;
 }
 
